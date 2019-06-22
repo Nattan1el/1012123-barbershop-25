@@ -15,6 +15,24 @@ body {
   background-position: top center;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 75px;
+}
+
 .inner-page {
   color: #000000;
 
@@ -47,15 +65,46 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.main-header-logo {
+  width: 368px;
+  height: 153px;
+  order: 2;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
 
   background-color: #000000;
 }
 
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.site-navigation li {
+  margin-right: 20px;
+}
+
 .site-navigation,
 .user-navigation {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -71,11 +120,23 @@ a {
   background-color: #242424;
 }
 
+.features {
+  margin-bottom: 80px;
+}
+
 .features-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .feature-item {
+  width: 300px;
+
   text-align: center;
 }
 
@@ -85,12 +146,22 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+
   color: #000000;
 
   background-color: #f8f5f2;
   background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.news,
+.contacts {
+  width: 380px;
 }
 
 .index-columns h2 {
@@ -104,6 +175,11 @@ a {
 
 .news-item time {
   text-transform: none;
+}
+
+.gallery,
+.appointment {
+  width: 300px;
 }
 
 .gallery-content {
@@ -267,12 +343,24 @@ a {
 }
 
 .main-footer {
+  margin-top: 65px;
+
   color: #ffffff;
 
   background-color: #212121;
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  margin: 0;
+  margin-right: 80px;
+  width: 320px;
 }
 
 .footer-contacts a {
@@ -286,6 +374,8 @@ a {
 }
 
 .footer-social {
+  width: 145px;
+
   text-align: center;
 }
 
@@ -298,6 +388,10 @@ a {
 }
 
 .footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
+
   text-align: center;
 }
 
