@@ -167,8 +167,6 @@ img {
 .user-navigation {
   display: flex;
   max-width: 140px;
-
-  background-color: red;
 }
 
 .inner-page .user-navigation {
